@@ -9,7 +9,7 @@ export default {
     },
   },
   methods: {
-    showToText() {
+    changeColor() {
       this.$emit('show', 'lightpink')
     }
   },
@@ -21,9 +21,8 @@ export default {
 
 <template>
   <div class="child" :class="{open:open}">
-    <button @click="showToText()" class="c-btn"> 부모 컴포넌트 색상 바꾸기 </button>
+    <button @click="changeColor()" class="c-btn"> 부모 컴포넌트 색상 바꾸기 </button>
   </div>
-
 </template>
 
 
